@@ -10,5 +10,24 @@ for i in num:
         count_even=count_even+1
 print('The Even number is ',count_even)
 print('The Odd number is ',count_odd)
+print('\n***************************************************************]n')
 
-
+'''Write a Python program to find the median of three values.'''
+value1=int(input('Input your number1 : '))
+value2=int(input('Input your number2 : '))
+value3=int(input('Input your number3 : '))
+if value1> value2:
+    if value1 < value3:
+        median = value1
+    elif value2 > value3:
+        median = value2
+    else:
+        median = value3
+else:
+    if value1 > value3:
+        median = value1
+    elif value2 < value3:
+        median = value2
+    else :
+        median = value3
+print('The median is ',median)
